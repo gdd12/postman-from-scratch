@@ -1,0 +1,28 @@
+.request-configuration {
+  display: flex;
+}
+.url-input {
+  width: 600px;
+  padding: 12px;
+  border-width: 0.5px;
+  border-color: rgb(107, 107, 107);
+  border-radius: 0 5px 5px 0;
+  
+}
+
+.method-input {
+  padding: 12px;
+  border-radius: 5px 0 0 5px;
+  border-color: rgb(107, 107, 107);
+  border-width: 0.5px;
+}
+
+.button-group {
+  padding-left: 10px;
+  display: flex;
+  gap: 10px
+}
+
+.button-group button {
+  background-color: rgb(0, 101,207);
+}
