@@ -36,7 +36,7 @@ function Request() {
   };
 
   return(
-    <>
+    <div className="request-wrapper">
       <div className="request-configuration">
         <select className="method-input" value={method} onChange={handleMethodChange}>
           {Object.keys(methodList).map((method,index) => (
@@ -64,8 +64,10 @@ function Request() {
       {activeTab === "headers" && <Headers/>}
       {activeTab === "body" && <Body/>}
 
-      <Response response={response}/>
-    </>
+      <div className="response-container">
+        <Response response={response}/>
+      </div>
+    </div>
   )
 }
 

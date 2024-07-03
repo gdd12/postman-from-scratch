@@ -1,8 +1,18 @@
+import '../styles/Response.css'
+
 export function Response({response}) {
-  response = JSON.stringify(response)
+  if (!response) return null;
+
+  const formattedResponse = JSON.stringify(response, null, 2);
+
   return (
-    <>
-    {response}
-    </>
+    <pre className="response-text-area">
+      {formattedResponse.split('\n').map((line, index) => (
+        <div key={index}>
+          <span className="line-number">{index + 1}</span>
+          {line}
+        </div>
+      ))}
+    </pre>
   )
 }

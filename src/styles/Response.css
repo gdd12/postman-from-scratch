@@ -1,0 +1,16 @@
+.response-text-area {
+  overflow: auto;
+  max-height: 50vh;
+  padding: 10px;
+  border-top: 1px solid rgb(107, 107, 107);
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.line-number {
+  display: inline-block;
+  width: 40px;
+  text-align: right;
+  margin-right: 10px;
+  color: #aaa;
+}
